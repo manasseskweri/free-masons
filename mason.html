@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith Community</title><style>
+body {margin:0;font-family:'Segoe UI',sans-serif;background:#f4f6f8;}
+header {background:linear-gradient(90deg,#2c3e50,#4ca1af);color:white;text-align:center;padding:20px;}
+nav {display:flex;flex-wrap:wrap;justify-content:center;background:#1f2a36;}
+nav button {background:none;border:none;color:white;padding:12px 18px;cursor:pointer;font-size:14px;transition:0.3s;}
+nav button:hover {background:#4ca1af;}
+.section {display:none;padding:30px;animation:fade 0.5s;}
+.active {display:block;}
+@keyframes fade {from{opacity:0} to{opacity:1}}
+.card {background:white;padding:20px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin:20px auto;max-width:1000px;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.profile {text-align:center;}
+.profile img {width:120px;height:120px;border-radius:50%;}
+input,textarea {width:100%;padding:10px;margin-top:5px;border-radius:8px;border:1px solid #ccc;}
+button.submit {background:#4ca1af;color:white;border:none;padding:12px;margin-top:10px;cursor:pointer;border-radius:8px;}
+.membership-charges-box {text-align:center;padding:20px;border:2px dashed #4ca1af;border-radius:12px;margin-top:15px;}
+footer {text-align:center;padding:15px;background:#2c3e50;color:white;margin-top:20px;}
+</style><script>
+function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function submitForm(e){e.preventDefault();const name=document.getElementById('name').value;localStorage.setItem(name, JSON.stringify({email:document.getElementById('email').value}));alert('Saved locally! Thank you '+name);}
+function membershipcharges(){
+const phone=document.getElementById('mpesaPhone').value;
+const amount=document.getElementById('mpesaAmount').value;
+if(phone && amount){
+   alert('STK Push simulated!\nPhone: '+phone+'\nAmount: KES '+amount+'\n\n(For real payments, integrate Safaricom Daraja API)');
+} else {
+   alert('Please enter phone number and amount');
+}
+}
+</script></head><body><header>
+    <img src="Screenshot_20260408-143806.jpg" style="border-radius:50%; height: 10; width: 10;">
+    <h1>Free masons church Kenya</h1>
+    <p>Growing Together in Faith, Love, and Service</p>
+</header><nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('beliefs')">Beliefs</button>
+    <button onclick="showSection('activities')">Activities</button>
+    <button onclick="showSection('calendar')">Calendar</button>
+    <button onclick="showSection('application')">Membership</button>
+    <button onclick="showSection('membership charges')">Membership charges</button>
+    <button onclick="showSection('contact')"> contact</button>
+</nav><div id="home" class="section active">
+    <div class="card">
+        <h2>Welcome</h2>
+        <h1>BROTHELY LOVE.RELIEF.TRUTH</h1>
+        <h1>NOT JUST A MAN.</h1>
+        <h1> A MASON</h1>
+        <p>A Freemason is committed to bettering himself, his community, and the world. He is on a journey of self-discovery believing in something greater than himself, a journey in which he will be supported by other good men.
+        <hr>
+            <h1>WHAT IS FREEMASON</h1>
+            <img   src="1760849818734.jpg" style="width: 400;height: 200;float: left;padding: 15px;">
+        <P>Freemasonry (or Masonry) is the oldest fraternal organization in the world. Though its origins can be traced to the stonemasons and cathedral builders of Medieval times, Freemasonry remains a vital force in the daily lives of millions of men across the globe.
+
+Through a series of degrees and ceremonies, the values of Freemasonry are passed from generation to generation, Mason to Mason, in a timeless and tireless effort to make good men better. These degrees provide a framework that affects every aspect of modern life and are based on the values of brotherly love, relief, and truth.
+
+Every year in virtually every city and town across America, thousands of men join the ranks of Freemasonry. Men of honor and integrity. Of charity and obligation. Each with a vow to be the best they can be. To be more than just a man. To be a Mason.</P>
+Become the best version of you. Answer the call. Begin the journey.</p>
+<h1>WHO WE ARE</h1>
+<br><hr>
+<p>A Freemason is a man who has taken an obligation to uphold our timeless principles of Brotherly love, relief, and truth. Beyond these basics, being a Freemason means so much more. A Freemason is a man who is committed to bettering himself and his community, having taken a solemn vow to help and mentor his Masonic Brothers do the same. A Freemason is a man eager to be part of something bigger than himself, with a reverence for history, compassion in his heart, and a desire to create a better future.</p>
+   <hr>
+<h1>WHAT WE BELIEVE IN</h1>
+   <P><h2>Core Values</h2>
+<h2>WHAT WE BELIEVE</h2>
+The core ethical principles of Freemasonry are about compassion and tolerance for all mankind. Freemasons do not use their position in the fraternity to advance an agenda, whether it be political, professional, religious, or secular.
+
+The three tenets of Freemasonry include:
+<br>
+
+<b>Brotherly love</b>
+<br>
+Devotion to and caring for each other and our community
+<br>
+
+<b>RELIEF</b>
+<br>
+Concern for and selfless giving to those in distress
+<br>
+
+<b>Truth</b>
+<br>
+Using knowledge, honesty, and understanding to build ourselves into better men</P>
+</div>
+</div>
+        
+</div><div id="beliefs" class="section">
+    <div class="card">
+        <h2>Our Beliefs</h2>
+        <img src="1761834367402.jpg">
+        <P><h2>Core Values</h2>
+<h2>WHAT WE BELIEVE</h2>
+The core ethical principles of Freemasonry are about compassion and tolerance for all mankind. Freemasons do not use their position in the fraternity to advance an agenda, whether it be political, professional, religious, or secular.
+
+The three tenets of Freemasonry include:
+<br>
+
+<b>Brotherly love</b>
+<br>
+Devotion to and caring for each other and our community
+<br>
+
+<b>RELIEF</b>
+<br>
+Concern for and selfless giving to those in distress
+<br>
+
+<b>Truth</b>
+
+    </div>
+</div><div id="activities" class="section">
+    <div class="card">
+        <h2>Church Activities</h2>
+        <img src="1775642707952.jpg">
+        <h2>PROTECTION</h2>
+       <p> Members gain protection from any harm,this is done throug blood sacrifices</p>
+       <h2> WEALTH</h2>
+       <p>We try to uplift our members economically</p>
+       <img src="1775642695019.jpg">
+    </div>
+</div><div id="calendar" class="section">
+    <div class="card">
+        <h2>Weekly Schedule</h2>
+        <ul>
+            <li>Tuesdy: Blood sacrifices - 12:00 PM</li>
+            <li>Thursday: Teachings - 6:00 PM</li>
+            <li>Sartuday: Payment - 5:00 PM</li>
+        </ul>
+    </div>
+    </div><div id="application" class="section">
+    <div class="card">
+        <h2>Membership Form</h2>
+        <form onsubmit="submitForm(event)">
+            <label>Full Name</label>
+            <input type="text" id="name" required><label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Phone</label>
+        <input type="text" required>
+
+        <label>Why do you want to join?</label>
+        <textarea rows="4"></textarea>
+
+        <button class="submit" type="submit">Submit</button>
+    </form>
+</div>
+</div>
+</div><div id="membership charges" class="section">
+    <div class="card">
+        <h2>Registar through (M-Pesa) a fee of ksh 666</h2>
+        <p>You can registar to be a member of our church using M-Pesa.</p><div class="donate-box">
+        <p><b>Till number:</b> 6724716</p>
+        
+        <hr>
+        
+        
+        
+        <h3>Or Send Directly</h3>
+        <input type="text" id="mpesaPhone" placeholder="Enter Phone (07XXXXXXXXXX)">
+        <input type="number" id="mpesaAmount" placeholder="ksh 666">
+        <button class="submit" onclick="membershipcharges()">Send via M-Pesa</button>
+        <p style="background-color: red;"><span>OUT OF SERVICE SORRY FOR THE INCONVINIENCE </span></p>
+        
+    </div>
+</div>
+
+</div><div id="contact" class="section">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>Email: SimpsonClarksville@gmail.com</p>
+        <p>Phone: +254 100448579</p>
+        <p>Location: Nairobi, Kenya</p>
+    </div>
+</div>
+
+</div><footer>
+    <p>© 2026 Freemasons Community Church</p>
+        <p>Email: SimpsonClarksville@gmail.com</p>
+    <p><a href="mailto:SimpsonClarksville@gmail.com"><button style="background-color: #4ca1af;"> contact us </button> </a></p>
+</footer></body>
+</html>
